@@ -24,6 +24,42 @@
     background: -moz-linear-gradient(#4af264, #39ba4d, #4af264);
     background: -webkit-gradient(linear, 0 0, 0 100%, from(#4af264), to(#4af264), color-stop(0.5, #39ba4d));
   }
+	  button.t3
+body {background: #1D1B26;}
+.button-container a {
+  text-decoration: none;
+  outline: none;
+  color: white;
+  display: inline-block;
+  position: relative;
+  padding: 15px 30px;
+  border: 1px solid;
+  border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  border-image-slice: 1;
+  margin: 10px 20px;   font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 2px;
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+.button-container a:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: white;
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165,.84,.44,1);
+}
+a:hover {background: rgba(255,255,255,0);}
+a:hover:before {
+  bottom: 0%;
+  top: auto;
+  height: 100%;
+}
    body {
     font: 10pt Arial, Helvetica, sans-serif; /* Шрифт на веб-странице */
     background: #54463d; /* Цвет фона */
@@ -81,11 +117,11 @@
    <div id="sidebar">
     <button class= "t1"><p><a href="index.html">Домашня сторінка</a></p></button>
     <button class= "t2"><p><a href="index1.html">Тема - Текстовий процесор</a></p></button>
-    <p><a href="lab2.html">звіт до лабораторної роботи №2. Тема - Google презентація</a></p>
-    <p><a href="lab3.html">звіт до лабораторної роботи №3. Тема - Google малюнок</a></p>
-    <p><a href="lab4.html">звіт до лабораторної роботи №4. Тема - Google форма-опитування</a></p>
-   <p><a href="lab5.html">звіт до лабораторної роботи №5. Тема - Google форма-тестування</a></p>
-   <p><a href="lab6.html">звіт до лабораторної роботи №6. Тема -  Google група</a></p>
+    <button class= "t3"><p><a href="lab2.html">звіт до лабораторної роботи №2. Тема - Google презентація</a></p>
+    <button class= "t2"><p><a href="lab3.html">звіт до лабораторної роботи №3. Тема - Google малюнок</a></p>
+    <button class= "t2"><p><a href="lab4.html">звіт до лабораторної роботи №4. Тема - Google форма-опитування</a></p>
+   <button class= "t2"><p><a href="lab5.html">звіт до лабораторної роботи №5. Тема - Google форма-тестування</a></p>
+   <button class= "t2"><p><a href="lab6.html">звіт до лабораторної роботи №6. Тема -  Google група</a></p>
    </div>
    <div class="clear"></div>
    <div id="footer">&copy; Сайт-звіт до лабораторних робіт студента 1 курсу групи "Фізика". Бєльчу Данііл</div>
